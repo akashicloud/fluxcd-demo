@@ -1,0 +1,11 @@
+---
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: GitRepository
+metadata:
+  name: 1-example1-source-git-app
+  namespace: flux-system
+spec:
+  interval: 1m0s
+  ref:
+    branch: example-1
+  url: https://github.com/akashicloud/fluxcd-examples.git
